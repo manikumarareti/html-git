@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+           @media screen and (min-width:0px) and (max-width:365px) {
+              .gb1{
+                      display: none;
+                  }
+          .gb{
+              padding: 10px;
+              padding: 40px;
+              background-color: aquamarine;
+              border: 2px solid black;
+              display: grid;
+              gap: 30px;
+
+          }
+          .cd{
+              background-color: orange;
+              border:2px solid orange;
+              padding: 10px;
+              display: grid;
+              justify-content: center;
+              align-content:center;
+          }
+      }
+      @media screen and (min-width:366px) and (max-width:600px) {
+          .gb1{
+                      display: none;
+                  }
+              .gb{
+                  background-color:aquamarine;
+                  border:2px solid black;
+                  height: 400px;
+                  display: grid;
+                  grid-template-columns:repeat(5,100fr);
+                  grid-template-rows: 100px ;
+                  gap: 10px;
+                  padding: 20px;
+
+              }
+              .cd{
+              background-color: red;
+              display: grid;
+              justify-content: center;
+              align-content: center;
+
+              }
+              .cd1{
+                  grid-column-start: 2;
+                  grid-column-end: 6;
+                  grid-row-start: 1;
+                  grid-row-end: 2;
+              }
+              .cd2{
+                  grid-column-start: 1;
+                  grid-column-end: 2;
+                  grid-row-start: 1;
+                  grid-row-end: 3;
+              }
+
+              }
+              @media screen and (min-width:601px) {
+                  .gb{
+                      display: none;
+                  }
+                  .gb1{
+                  background-color:lightcoral;
+                  border:2px solid black;
+                  height: 400px;
+                  display: grid;
+                  grid-template-columns:repeat(3,100fr);
+                  grid-template-rows: 100px ;
+                  gap: 10px;
+                  padding: 20px;
+              }
+              .cd{
+                  font-size: 25px;
+                  background-color: lightpink;
+                  border: 2px solid lightpink;
+                  display: grid;
+                  justify-content: center;
+                  align-content: center;
+              }
+              .cd1{
+                  grid-column-start:1 ;
+                  grid-column-end:4 ;
+                  grid-row-start: 1;
+                  grid-row-end: 2;
+              }
+              .cd2{
+                  grid-column-start:1;
+                  grid-column-end:2;
+                  grid-row-start:2 ;
+                  grid-row-end: 4;
+              }
+              .cd5{
+                  grid-column-start:2;
+                  grid-column-end:4;
+                  grid-row-start: 3;
+                  grid-row-end: 4;
+
+              }
+            }
+    </style>
+  </head>
+  <body>
+    <div class="gb">
+      <div class="cd cd1">one</div>
+      <div class="cd cd2">two</div>
+      <div class="cd cd3">three</div>
+      <div class="cd cd4">four</div>
+      <div class="cd cd5">five</div>
+      <div class="cd cd6">six</div>
+    </div>
+    <div class="gb1">
+      <div class="cd cd1">Header</div>
+      <div class="cd cd2">Menu</div>
+      <div class="cd cd3">Main</div>
+      <div class="cd cd4">Right</div>
+      <div class="cd cd5">Footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gb{
+            background-color: aqua;
+            border: 2px solid black;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 70px;
+            gap: 10px;
+           /*  grid-template-columns: repeat(3,100px);
+            grid-template-rows:100px  */
+           /*  justify-content: center;
+            align-content: center; */
+      }
+      .cd{
+        background-color: red;
+      }
+      .cd1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gb">
+      <div class="cd cd1">one</div>
+      <div class="cd cd2">two</div>
+      <div class="cd cd3">three</div>
+      <div class="cd cd4">four</div>
+      <div class="cd cd5">five</div>
+      <div class="cd cd6">six</div>
+    </div>
+  </body>
+</html>

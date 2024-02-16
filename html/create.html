@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create account</h1>
+    <form >
+        <label for="fname">First name: </label>
+        <input type="text"id="fname"name=firstname required/>
+        <br><br><label for="lname">Last name: </label>
+        <input type="text"id="lname"name=lastname required/>
+        <br><br><label for="ph">moble number:</label>
+        <input type="tel"id="ph"name=phonenumber required placeholder="1234567890" pattern="{10}"/>
+        
+        <br><br><label for="mail">Enter mail </label>
+        <input type="mail" id="mail" name="mail"  required placeholder="abcdefg@mail.com"/>
+        <br><br><label for="pwd">password </label>
+        <input type="password"id="pwd"name=password required placeholder="At least 6 characters" pattern="{6}"/>
+        <br><br><br><input type="submit" formaction="./day7.html"/>
+    </form>
+</body>
+</html>
