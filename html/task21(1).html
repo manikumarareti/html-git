@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img {
+            position: absolute;
+            top: 100px;
+            left: 350px;
+            height: 300px;
+            width: 300px;
+        }
+
+        .p {
+            background-color: antiquewhite;
+            border: 2px solid black;
+            margin-left: 50px;
+            height: 500px;
+            width: 200px;
+            padding: 20px;
+
+
+        }
+
+        .c {
+            position: relative;
+            padding: 20px;
+            margin-right: 390px;
+            margin-inline-start: -50px;
+        }
+
+        .c1:checked~img {
+            transform: none;
+        }
+
+        .c2:checked~img {
+            transform: rotate(10deg);
+        }
+
+        .c3:checked~img {
+            transform: rotate(45deg);
+        }
+
+        .c4:checked~img {
+            transform: rotateX(45deg);
+        }
+
+        .c5:checked~img {
+            transform: rotateX(100deg);
+        }
+
+        .c6:checked~img {
+            transform: rotateY(45deg);
+        }
+
+        .c7:checked~img {
+            transform: rotateY(80deg);
+        }
+
+        .c8:checked~img {
+            transform: skew(20deg, 20deg);
+        }
+
+        .c9:checked~img {
+            transform: skew(30deg, 30deg);
+        }
+
+        .c10:checked~img {
+            transform: skewX(30deg);
+        }
+
+        .c11:checked~img {
+            transform: skewX(40deg);
+        }
+
+        .c12:checked~img {
+            transform: skewY(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p">
+
+        <label for="transform">transform: none;</label>
+        <input type="radio" class="c c1" id="transform" name="action" />
+
+
+        <label for="transform">transform: rotate(10deg);</label>
+        <input type="radio" class="c c2" id="transform" name="action" />
+
+
+        <label for="transform">transform: rotate(45deg);</label>
+        <input type="radio" class="c c3" id="transform" name="action" />
+
+        <label for="transform">transform: rotateX(45deg);</label>
+        <input type="radio" class="c c4" id="transform" name="action" />
+
+        <label for="transform">transform: rotateX(100deg);</label>
+        <input type="radio" class="c c5" id="transform" name="action" />
+
+        <label for="transform">transform: rotateY(45deg);</label>
+        <input type="radio" class="c c6" id="transform" name="action" />
+
+        <label for="transform">transform: rotateY(80deg);</label>
+        <input type="radio" class="c c7" id="transform" name="action" />
+
+        <label for="transform">transform: skew(20deg,20deg);</label>
+        <input type="radio" class="c c8" id="transform" name="action" />
+
+        <label for="transform">transform: skew(30deg,30deg);</label>
+        <input type="radio" class="c c9" id="transform" name="action" />
+
+        <label for="transform">transform: skewX(30deg);</label>
+        <input type="radio" class="c c10" id="transform" name="action" />
+
+        <label for="transform">transform: skewX(40deg);</label>
+        <input type="radio" class="c c11" id="transform" name="action" />
+
+        <label for="transform">transform: skewY(30deg);</label>
+        <input type="radio" class="c c12" id="transform" name="action" />
+
+        <img src="../assets/tree-736885_640.jpg" />
+
+</body>
+
+</html>
